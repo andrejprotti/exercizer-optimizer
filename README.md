@@ -1,5 +1,4 @@
-# exercizer-optimizer
-Optimize your workouts!
+# 💪💪💪 Optimize your workouts! 💪💪💪
 
 Some important allies that helped me with this but don't show up in the imports: rubocop and pry!
 
