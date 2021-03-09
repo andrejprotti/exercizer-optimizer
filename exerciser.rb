@@ -1,19 +1,5 @@
 # frozen_string_literal: true
 
-require 'json'
-
-sample_input = { time: 30,
-                 exercises: [
-                   { id: '1', name: 'Squats', average_span: 20,
-                     average_calorie_consumption: 120 },
-                   { id: '2', name: 'Arm curls', average_span:
-                   10, average_calorie_consumption: 25 },
-                   { id: '3', name: 'Plank', average_span: 2,
-                     average_calorie_consumption: 10 },
-                   { id: '4', name: 'Jumping jacks',
-                     average_span: 10, average_calorie_consumption: 35 }
-                 ] }
-
 def add_to_workout(id, current_time, exercise, possible_solutions)
   return current_time if (current_time <= 0) || (exercise[:average_span] > current_time)
 
@@ -67,5 +53,3 @@ def maximize_workout(exercises_hash)
 
   { max_calories: max_calories, exercises: best_workout }
 end
-
-puts maximize_workout(sample_input)
